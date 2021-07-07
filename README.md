@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Carlos. I'm here to create my portfolio!
 - 👀 I’m interested in ... design, code, cars, music and DJ'ing (not particularly in that order).
-- 🌱 I’m currently working on upgrading my HTML / CSS skills and maybe even learn some React
-- 💞️ I’m looking to collaborate on not a whole lot at the moment
+- 🌱 I’m currently working on upskilling in HTML / CSS skills and maybe even learn some React
+- 💞️ I’m looking to build my new portfolio with github
 - 📫 How to reach me on Twitter at @CarlosRDesigns1
 
 <!---
