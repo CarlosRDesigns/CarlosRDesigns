@@ -1,0 +1,42 @@
+body {
+    background-color: #FFC6C2;
+    font-family: 'Noto Serif JP', serif;
+}
+/** Typography Seciton **/
+h1 {
+    color: #e5fcff;
+    font-size: 4rem;
+    /** font-family: 'Noto Serif JP', serif; **/
+
+}
+
+h2 {
+    color: #2c383a;
+}
+
+p {
+    color: #2c383a;
+    font-size: 1.25rem;
+}
+
+/** Styling Tests **/
+
+.block-headline {
+    max-width: auto;
+    margin-left: 1.5rem;
+}
+
+.block-intro {
+    max-width: 40rem;
+    margin-left: 3rem;
+}
+
+.block-goals {
+    max-width: 40rem;
+    margin-left: 3rem;
+}
+
+.block-background {
+    max-width: 40rem;
+    margin-left: 3rem;
+}
