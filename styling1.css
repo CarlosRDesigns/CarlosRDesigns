@@ -1,35 +1,140 @@
+/* CSS Resets (Needed?) */
+
+* {
+    box-sizing: border-box;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+
+    @media screen and (-ms-high-contrast: active) {
+        border: 2px solid currentcolor; /* I don't know what this line does */
+    }
+}
+
+/* End of styling resets */
+
 body {
     background-color: #FFC6C2;
-    font-family: 'Noto Serif JP', serif;
+
 }
-/** Typography Seciton **/
+/** Headline Typography Section **/
+
 h1 {
-    color: #F87575;
-    font-size: 4rem;
-    /** font-family: 'Noto Serif JP', serif; **/
+    color: #2c383a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3.052rem;
 
 }
 
 h2 {
     color: #2c383a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.441rem;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.953rem;
+
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.563rem;
+
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.00rem;
+
 }
 
 p {
-    color: #2c383a;
+    color: #1a1a1a;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
+    line-height: 1.75rem;
+    
+}
+
+/* CTA Styling */
+
+
+a.button,
+button.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5FCFF;
+    min-width: 10ch;
+    padding: .75rem 1.5rem;
+    min-height: 3rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #2C383A;
+    line-height: 1.25;
+
+}
+
+
+button.button:hover {
+    background-color: #00a2b8;
+    transition: 220ms all ease-in-out;
+}
+
+button.button:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 4px #F87575;
+}
+
+button.button:active {
+    background-color: #00d8f5;
 }
 
 /** Styling Tests **/
 
+.hero1 {
+    margin: 2rem;
+    
+}
+
 .block-headline {
-    max-width: auto;
-    margin-left: 1.5rem;
+    max-width: 48rem;
+    min-height: 16rem;
+    text-align: center;   
+    
 }
 
 .block-intro {
     max-width: 40rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
+
 
 .block-goals {
     max-width: 40rem;
@@ -39,4 +144,69 @@ p {
 .block-background {
     max-width: 40rem;
     margin-left: 3rem;
+}
+
+.card {
+    background-color: #e5fcff;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+img {
+    height: 24rem;
+    border-radius: .5rem;
+}
+
+.card_title {
+    font-size: 1.5rem;
+
+}
+
+/** Horizontal card, text lockup test **/
+
+#block-hcard {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: 2rem;
+    border: 2px solid orange; /* Just for tracking the container */
+
+  }
+
+  @media (max-width: 50rem) {
+      #block-hcard {
+          flex-direction: column;
+      }
+
+      .card_title1 {
+          order: 1;
+      }
+
+      .card_details1 {
+          order: 2;
+      }
+  }
+
+#block-hcard div {
+    padding: 1rem;
+    text-align: left;
+    color: #000000;
+    font-family: arial, sans-serif;
+  } 
+
+.card_title1 {
+
+    flex-basis: 100%;
+    font-size: 3rem;
+    box-align: top;
+    
+}
+
+.card_details1 {
+    flex-basis: 100%;
+    font-size: 1.25rem;
 }
